@@ -13,7 +13,9 @@
 //			Add to both the the trigger and the target
 //
 //---------------------------------------------------------
-$('.js-focus').on('click', function(event) {
-	var focusID = $(this).attr('data-js-focus');
-	$('[data-js-focus=' + focusID + ']').focus();
-});
+(function($) {
+	$('.js-focus').on('click', function(event) {
+		var focusID = $(this).attr('data-js-focus');
+		$('[data-js-focus=' + focusID + ']').focus();
+	});
+})(jQuery);
